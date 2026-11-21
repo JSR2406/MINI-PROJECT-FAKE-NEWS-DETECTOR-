@@ -1,33 +1,25 @@
-# 🧠 Fake News Detector — AI-Powered WhatsApp News Verifier
+# Fake News Detector UI Prototype
 
-## 📌 Project Overview
-The **Fake News Detector** is an AI-based web application designed to identify and flag misleading or fake news content, particularly targeting the spread of misinformation through platforms like WhatsApp and social media.  
-It uses **Machine Learning (ML)** and **Natural Language Processing (NLP)** models to analyze text and determine the authenticity of news articles or messages.
+A React mini-project exploring how a news-credibility interface might present results for pasted articles and social-media messages. The site is an educational demo. Use independent sources to check claims.
 
----
+## Demo behavior
 
-## 🚀 Key Features
-- 🔍 **Real-time Fake News Detection** — Instantly verify news headlines or text.
-- 🤖 **AI-Powered Model** — Uses trained ML/NLP models to classify content as *Real* or *Fake*.
-- 📊 **Confidence Score** — Displays how confident the model is in its prediction.
-- 💾 **Dataset Integration** — Supports training on user-provided or public fake news datasets.
-- 🧩 **Beautiful UI** — Built using **React.js** and styled with **Tailwind CSS** for a clean, responsive interface.
+- Built-in examples display preset scores and example analysis.
+- Custom input can receive randomized scores and labels. Scores are uncalibrated and have no measured predictive value.
+- Model names and training-data figures shown in the demo UI are illustrative. The repository contains a browser app with no training pipeline or inference service.
 
----
+## Project layout
 
-## 🧰 Tech Stack
-| Layer | Technology |
-|--------|-------------|
-| Frontend | React.js, Tailwind CSS |
-| Backend | FastAPI / Node.js (depending on implementation) |
-| ML Model | Scikit-learn / TensorFlow / Custom Text Classifier |
-| Hosting | GitHub Pages / Render / Vercel |
-| Version Control | Git & GitHub |
+- [src/index.js](src/index.js) mounts the app.
+- [src/App.js](src/App.js) hosts the news interface.
+- [src/MLEnhancedFakeNewsDetector.jsx](src/MLEnhancedFakeNewsDetector.jsx) contains sample inputs, simulated outputs, and the UI.
+- [public](public) contains browser assets.
 
----
+## Run locally
 
-## ⚙️ How to Run Locally
-
-### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/JSR2406/MINI-PROJECT-FAKE-NEWS-DETECTOR-.git
+npm ci
+npm start
+```
+
+Open http://localhost:3000. Run `npm run build` to create the static bundle.
